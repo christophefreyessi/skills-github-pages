@@ -8,21 +8,21 @@ body {
   font-family: Arial, sans-serif;
 }
 h1 {
-  font-size: 36px;
+  font-size: 28px;
   color: navy;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 20px;
   color: darkgreen;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: black;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 nav a { color: black; margin: 0 1rem; text-decoration: none; }
