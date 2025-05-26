@@ -8,6 +8,15 @@ body {
   font-family: Arial, sans-serif;
 }
 
+
+nav a { color: black; margin: 0 1rem; text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.hero { padding: 4rem 2rem; background: #ffffff; text-align: center; }
+.hero h1 { margin: 0 0 1rem; }
+.content { padding: 2rem; }
+
+
+
 header {
   display: flex;
   justify-content: space-between;
@@ -17,7 +26,8 @@ header {
   color: black;
   position: relative;
 }
-
+footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
+	
 .logo {
   font-size: 1.5rem;
 }
