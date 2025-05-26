@@ -12,9 +12,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #333;
+  background: #ffffff;
   padding: 1rem 2rem;
-  color: white;
+  color: black;
   position: relative;
 }
 
@@ -42,7 +42,7 @@ header {
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: white;
+  background: black;
   margin: 4px 0;
   border-radius: 2px;
 }
@@ -54,7 +54,7 @@ header {
     top: 60px;
     right: 0;
     flex-direction: column;
-    background: #333;
+    background: #ffffff;
     width: 100%;
     display: none;
     text-align: center;
