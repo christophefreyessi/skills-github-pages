@@ -53,9 +53,7 @@ header {
 }
 footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
 	
-.logo {
-  font-size: 1.5rem;
-}
+.logo {font-size: 1.5rem;}
 
 .navbar {
   display: flex;
