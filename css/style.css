@@ -7,7 +7,23 @@
 body {
   font-family: Arial, sans-serif;
 }
+h1 {
+  font-size: 36px;
+  color: navy;
+  margin-bottom: 20px;
+}
 
+h2 {
+  font-size: 28px;
+  color: darkgreen;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
 
 nav a { color: black; margin: 0 1rem; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
@@ -78,3 +94,5 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
     display: flex;
   }
 }
+.post-preview { margin-bottom: 2rem; }
+.post-preview h2 { margin: 0; }
