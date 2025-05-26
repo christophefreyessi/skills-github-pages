@@ -52,7 +52,20 @@ header {
   position: relative;
 }
 footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
-	
+
+ .table-container {overflow-x: auto;}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  td, th {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }	
+  
 .logo {font-size: 1.5rem;}
 
 .navbar {
