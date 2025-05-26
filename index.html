@@ -20,17 +20,28 @@
   <header>
     <img src="images/ESSI_Logo.png" alt="ESSI_Logo" style="height:500px;">
     <h1>ESSI</h1>
-    <nav>
+    <nav class="navbar" id="nav-links">
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
+	    <div class="hamburger" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </header>
+  
+    <script>
+    function toggleMenu() {
+      document.getElementById("nav-links").classList.toggle("active");
+    }
+  </script>
 
   <section class="hero">
     <h1>Welcome to the European System-Driven Semiconductor Initiative (ESSI) site</h1>
     <p>The European System-Driven Semiconductor Initiative (ESSI) is a European think-tank. It aims at identifying and promoting practical actions to increase and accelerate the generation of economic value between European semiconductor product makers and system makers. 
-The ESSI vision is to enable the fastest deployment of differentiated market-leading systems, leveraging the best European semiconductor products. ESSI aligns with and fuels the European ChipAc.</p>
+The ESSI vision is to enable the fastest deployment of differentiated market-leading systems, leveraging the best European semiconductor products. ESSI aligns with and fuels the European ChipAct.</p>
   </section>
 
   <section class="content">
@@ -40,4 +51,8 @@ The ESSI vision is to enable the fastest deployment of differentiated market-lea
 	<a href="https://www.linkedin.com/in/jpdelesse">Jean-Pierre Delesse</a>
 	<a href="https://www.linkedin.com/in/olivier-lauvray-ab077514/">Olivier Lauvray</a>
 	<a href="https://www.linkedin.com/in/christophefrey">Christophe Frey</a>
-  </sect
+  </sect>
+  
+  </body>
+</html>
+  
