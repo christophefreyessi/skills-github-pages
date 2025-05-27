@@ -28,6 +28,6 @@ function loadBlogLinks(containerId, indexFile = 'blogs/index.json', folderPath =
       });
     })
     .catch(error => {
-      console.error('Error loading blog list:', error);
+      console.error('Error while loading blog list:', error);
     });
 }
