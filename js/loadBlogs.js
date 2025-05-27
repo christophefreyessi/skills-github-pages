@@ -33,10 +33,10 @@ function loadBlogLinks(containerId, indexFile = 'blogs/index.json', folderPath =
         });
 
         const dateSpan = document.createElement('span');
-        dateSpan.textContent = ` (${formattedDate})`;
+        dateSpan.textContent = ` ${formattedDate}`;
         dateSpan.style.marginLeft = '8px';
         dateSpan.style.fontSize = '90%';
-        dateSpan.style.color = 'black';
+        dateSpan.style.color = 'grey';
 
         li.appendChild(a);
         li.appendChild(dateSpan);
