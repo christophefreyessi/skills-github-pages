@@ -49,6 +49,7 @@ header {
   align-items: center;
   background: #ffffff;
   padding: 1rem 2rem;
+  overflow: visible;
   color: black;
   position: relative;
 }
