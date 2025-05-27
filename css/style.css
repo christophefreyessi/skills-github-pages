@@ -12,25 +12,21 @@ h1 {
   color: navy;
   margin-bottom: 10px;
 }
-
 h2 {
   font-size: 20px;
   color: darkgreen;
   margin-bottom: 5px;
 }
-
 h3 {
   font-size: 16px;
   color: black;
   margin-bottom: 2px;
 }
-
 nav a { color: black; margin: 0 1rem; text-decoration: none; }
 nav a:hover { text-decoration: underline; }
 .hero { padding: 4rem 2rem; background: #ffffff; text-align: center; }
 .hero h1 { margin: 0 0 1rem; }
 .content { padding: 2rem; }
-
 table {
 width: 100%;
 border-collapse: collapse;
@@ -47,7 +43,6 @@ td ul {
   padding-left: 1.2em;
   margin: 0;
 }
-
 header {
   display: flex;
   justify-content: space-between;
@@ -58,9 +53,7 @@ header {
   position: relative;
 }
 footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
-  
 .logo {font-size: 1.5rem;}
-
 .navbar {
   display: flex;
   gap: 1rem;
