@@ -32,15 +32,17 @@ nav a:hover { text-decoration: underline; }
 .content { padding: 2rem; }
 
 table {
+width: 100%;
 border-collapse: collapse;
-width: 50%;
 }
-td {
-border: 1px solid #000;
+
+td, th {
 padding: 8px;
-text-align: center;
+border: 1px solid #ccc;
+text-align: left;
 vertical-align: top;
-}
+}	
+  
 td ul {
   list-style-position: inside;
   padding-left: 1.2em;
@@ -60,16 +62,7 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
 
  .table-container {overflow-x: auto;}
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
 
-  td, th {
-    padding: 8px;
-    border: 1px solid #ccc;
-    text-align: left;
-  }	
   
 .logo {font-size: 1.5rem;}
 
