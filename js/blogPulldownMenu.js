@@ -1,4 +1,5 @@
-  fetch(indexFile)
+  function loadBlogLinksToMenu(containerId, indexFile = 'blogs/index.json', folderPath = 'blogs/') {
+	fetch(indexFile)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
       return response.json();
@@ -46,3 +47,4 @@
     .catch(error => {
       console.error('Error loading blog list:', error);
     });
+ }
