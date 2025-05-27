@@ -1,4 +1,3 @@
-function makeBlogPullDownMenu(containerId, indexFile = 'blogs/index.json', folderPath = 'blogs/') {
   fetch(indexFile)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
@@ -39,11 +38,11 @@ function makeBlogPullDownMenu(containerId, indexFile = 'blogs/index.json', folde
         dateSpan.style.color = 'grey';
 
         li.appendChild(a);
-        li.appendChild(dateSpan);
+		console.info("menu loaded");
+        //li.appendChild(dateSpan);
         menu.appendChild(li);
       });
     })
     .catch(error => {
       console.error('Error loading blog list:', error);
     });
-}
