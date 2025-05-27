@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<script src="loadBlogs.js"></script>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,9 +47,13 @@ The ESSI vision is to enable the fastest deployment of differentiated market-lea
 	<td>
 		<h3> Blogs</h3><br>
 		<div class="post-preview">
-			<ul>
-				<li> <a href="blogs/blog-26-apr-2025.pdf">European technological independence in challenging times<a> </li>
-			</ul>
+		  <script>
+			// Created bullet list of blogs referenced in index.json in the blogs folder
+			loadBlogLinks('blog-list');
+			</script>
+			// <ul>
+			//	<li> <a href="blogs/blog-26-apr-2025.pdf">European technological independence in challenging times<a> </li>
+			// </ul>
 		</div>
 	</td>
   </tr>
