@@ -24,24 +24,9 @@
 			const a = document.createElement('a');
 			a.href = folderPath + item.file;
 			a.textContent = item.title;
-
-			const dateObj = new Date(item.date);
-			const formattedDate = dateObj.toLocaleDateString(undefined, {
-			  year: 'numeric',
-			  month: 'long',
-			  day: 'numeric'
-			});
-
-			const dateSpan = document.createElement('span');
-			dateSpan.textContent = ` ${formattedDate}`;
-			dateSpan.style.marginLeft = '8px';
-			dateSpan.style.fontSize = '90%';
-			dateSpan.style.color = 'grey';
-
 			li.appendChild(a);
 			console.info("menu loaded");
-			//li.appendChild(dateSpan);
-			menu.appendChild(li);
+			menu.appendChild(a);
 		  });
 		})
 		.catch(error => {
