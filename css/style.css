@@ -125,6 +125,7 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
   background-color: white;
   min-width: 160px;
   z-index: 1;
+  white-space: nowrap;
 }
 
 .dropdown-content a {
@@ -132,6 +133,8 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
   padding: 10px;
   text-decoration: none;
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
 .dropdown-content a:hover {
