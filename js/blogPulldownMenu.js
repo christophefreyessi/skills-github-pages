@@ -25,7 +25,7 @@
 			a.href = folderPath + item.file;
 			a.textContent = item.title;
 			//li.appendChild(a);
-			console.info("menu list is loaded");
+			console.info("menu list loaded");
 			menu.appendChild(a);
 		  });
 		})
