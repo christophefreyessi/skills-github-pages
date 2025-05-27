@@ -20,12 +20,12 @@
 			  return;
 			}
 
-			const li = document.createElement('li');
+			//const li = document.createElement('li');
 			const a = document.createElement('a');
 			a.href = folderPath + item.file;
 			a.textContent = item.title;
-			li.appendChild(a);
-			console.info("menu loaded");
+			//li.appendChild(a);
+			console.info("menu list loaded");
 			menu.appendChild(a);
 		  });
 		})
