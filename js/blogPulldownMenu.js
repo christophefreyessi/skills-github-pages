@@ -1,5 +1,5 @@
-  function loadBlogLinksToMenu(containerId, indexFile = 'blogs/index.json', folderPath = 'blogs/') {
-	fetch(indexFile)
+function loadBlogLinks(containerId, indexFile = 'blogs/index.json', folderPath = 'blogs/') {
+  fetch(indexFile)
     .then(response => {
       if (!response.ok) throw new Error(`HTTP error ${response.status}`);
       return response.json();
@@ -10,7 +10,7 @@
         console.error(`Element with id "${containerId}" not found.`);
         return;
       }
-	const menu = document.getElementById("blogMenu");	
+
       // Sort by date (newest to oldest)
       items.sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -39,12 +39,11 @@
         dateSpan.style.color = 'grey';
 
         li.appendChild(a);
-		console.info("menu loaded");
-        //li.appendChild(dateSpan);
-        menu.appendChild(li);
+        li.appendChild(dateSpan);
+        list.appendChild(li);
       });
     })
     .catch(error => {
       console.error('Error loading blog list:', error);
     });
- }
+}
