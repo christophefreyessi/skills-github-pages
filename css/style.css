@@ -108,6 +108,7 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
   background-color: #333;
   color: white;
   padding: 10px;
+  font-size: 12px;
   border: none;
   cursor: pointer;
 }
@@ -127,8 +128,8 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
   padding: 10px 16px;
   text-decoration: none;
   display: block;
-  overflow: hidden;
   text-overflow: ellipsis; 
+  overflow: hidden;
 }
 
 .dropdown-content a:hover {
