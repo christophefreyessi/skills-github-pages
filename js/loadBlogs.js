@@ -36,7 +36,7 @@ function loadBlogLinks(containerId, indexFile = 'blogs/index.json', folderPath =
         dateSpan.textContent = ` (${formattedDate})`;
         dateSpan.style.marginLeft = '8px';
         dateSpan.style.fontSize = '90%';
-        dateSpan.style.color = 'gray';
+        dateSpan.style.color = 'black';
 
         li.appendChild(a);
         li.appendChild(dateSpan);
