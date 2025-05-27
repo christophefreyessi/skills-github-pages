@@ -1,67 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Welcome to the European System driven Semiconductor Inititiative Think Tank site</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  fetch(indexFile)
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+      return response.json();
+    })
+    .then(items => {
+      const list = document.getElementById(containerId);
+      if (!list) {
+        console.error(`Element with id "${containerId}" not found.`);
+        return;
+      }
+	const menu = document.getElementById("blogMenu");	
+      // Sort by date (newest to oldest)
+      items.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-  <header>
-    <a href="index.html">
-		<img src="images/ESSI_Logo.png" alt="ESSI_Logo" style="height:80px;">
-	</a>
-    <nav class="navbar" id="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-	  	</div>
-    </nav>
-	<div class="dropdown">
-	  <button class="dropbtn">Blog Posts</button>
-	  <div class="dropdown-content" id="blogMenu">
-		<!-- Blog links will be inserted here -->
-	  </div>
-	</div>
-	<div class="hamburger" onclick="toggleMenu()">
-      <span></span>
-      <span></span>
-      <span></span>
+      items.forEach(item => {
+        if (!item.file || !item.title || !item.date) {
+          console.warn('Invalid item format:', item);
+          return;
+        }
 
-  </header>
-  
-    <script>
-    function toggleMenu() {
-      document.getElementById("nav-links").classList.toggle("active");
-    }
-  </script>
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = folderPath + item.file;
+        a.textContent = item.title;
 
-  <section class="hero">
-    <h1>Welcome to the European System-Driven Semiconductor Initiative site</h1>
-  </section>
-  <section>
-	  <table>
-		  <tr>
-			<td>
-			<iframe src="files/ESSI-detailed-Overview.pdf" style="width: 100%; height: 450px;"></iframe>
-			</td>
-			<td>
-				<h3> Blogs</h3><br>
-				<div class="post-preview">
-				<ul id="blog-list"></ul>
-					<script src="js/loadBlogs.js"></script>
-					<script>
-						// Create bullet list of blogs referenced in index.json in the blogs folder
-						loadBlogLinks('blog-list');
-					</script>
-				</div>
-			</td>
-		  </tr>
-	</table>
-</section>
+        const dateObj = new Date(item.date);
+        const formattedDate = dateObj.toLocaleDateString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric'
+        });
 
-  <script src="js/blogPulldownMenu.js"></script>
- </body>
-</html>
-  
+        const dateSpan = document.createElement('span');
+        dateSpan.textContent = ` ${formattedDate}`;
+        dateSpan.style.marginLeft = '8px';
+        dateSpan.style.fontSize = '90%';
+        dateSpan.style.color = 'grey';
+
+        li.appendChild(a);
+		console.log("menu loaded");
+        //li.appendChild(dateSpan);
+        menu.appendChild(li);
+      });
+    })
+    .catch(error => {
+      console.error('Error loading blog list:', error);
+    });
