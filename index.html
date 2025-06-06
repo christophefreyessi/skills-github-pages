@@ -1,105 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 40px;
-      line-height: 1;
-      color: #1a1a1a;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 1em;
-    }
-    table, th, td {
-      border: 1px solid #aaa;
-    }
-    th, td {
-      padding: 0.6em;
-      text-align: left;
-    }
-    th {
-      background-color: #f0f0f0;
-    }
-    .highlight {
-      color: #0055aa;
-      font-weight: bold;
-    }
+	<head style="margin-top: 4px;margin-bottom: 4px">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=0.8">
+		<title>European System driven Semiconductor Inititiative from R&D to economic value</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<div class="dropdown">
+				<button class="dropbtn">Blog Posts</button>
+				<div class="dropdown-content" id="blogMenu">
+					<!-- Blog links will be inserted here -->
+				</div>
+			</div>
+			<a href="index.html">
+				<img src="images/ESSI_Logo.png" alt="ESSI_Logo" style="height:80px;">
+			</a>
+			<nav class="navbar" id="nav-links">
+			  <a href="index.html">Home</a>
+			  <a href="about.html">About</a>
+			  <a href="contact.html">Contact</a>
+			</nav>
+			<div class="hamburger" onclick="toggleMenu()">
+			  <span></span>
+			  <span></span>
+			  <span></span>
+	  </header>
+		<script>
+			function toggleMenu() {
+			  document.getElementById("nav-links").classList.toggle("active");
+			}
+		</script>
 
-  </style>
-</head>
-<body>
+		<section class="hero">
+			<h1>European System-Driven Semiconductor Initiative, from R&D to economic Value</h1>
+			<iframe src="essi_onepager.html" style="width:100%; height:750px; border:none;"> </iframe>
+		</section>	
+		<section>
+			  <table>
+				  <tr>
+					<td>
+					<iframe src="files/ESSI-detailed-Overview.pdf" style="width: 100%; height:450px;"></iframe>
+					</td>
+					<td>
+						<h3> Blogs</h3><br>
+						<div class="post-preview">
+						<ul id="blog-list"></ul>
+							<script src="js/loadBlogs.js"></script>
+							<script>
+								// Create bullet list of blogs referenced in index.json in the blogs folder
+								loadBlogLinks('blog-list');
+							</script>
+						</div>
+					</td>
+				  </tr>
+			</table>
+		</section>
+		<script src="js/blogPulldownMenu.js"></script>
+		<script> loadBlogLinksToMenu('blog-list'); </script>
+	 </body>
 
-<p><strong>Why Now is the Time to Invest in Industrial Leadership</strong></p>
-<p>The European System-driven Semiconductor Initiative (ESSI) is the next vital evolution in Europe’s semiconductor strategy. It is designed to <strong>convert R&amp;D into market impact—fast</strong>.</p>
-
-<h2>From Research to Revenue: the Critical Gap</h2>
-<ul>
-	<li>Europe has invested <strong>over €90B in semiconductor R&amp;D</strong> (Chips JU, IPCEI, EIC, EIB...)</li>
-	<li>Too little of this flows into industrial value or market deployment</li>
-	<li><strong>ESSI bridges the gap</strong>: turning validated prototypes into qualified, integrated, production-ready systems</li>
-	<ul>
-		<li>Focused on <strong>industrialisation</strong>, not research</li>
-		<li>Driven by <strong>industry experts</strong>, not an academic community</li>
-	</ul>
-</ul>
-<h2>Chips JU vs. ESSI &mdash; Complementary Roles</h2>
-<table style="width: auto; border-collapse: collapse;">
-  <thead>
-    <tr>
-      <th></th>
-      <th>Chips JU / AENEAS / EPOSS / INSIDE</th>
-      <th>ESSI</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>Primary Focus</strong></td>
-      <td>Research &amp; Prototypes</td>
-      <td>Deployment &amp; Adoption</td>
-    </tr>
-    <tr>
-      <td><strong>Success Metrics</strong></td>
-      <td>IP, papers, early tech validation</td>
-      <td>Revenue, jobs, investments, EU growth</td>
-    </tr>
-    <tr>
-      <td><strong>Leadership</strong></td>
-      <td>Association-driven</td>
-      <td>Expert-led coordination team</td>
-    </tr>
-    <tr>
-      <td><strong>Mechanism</strong></td>
-      <td>R&amp;D calls and project clustering</td>
-      <td>System integration, acceleration, and scale-up</td>
-    </tr>
-  </tbody>
-</table>
-<br><br>
-<h2>A Small Investment to Unlock Major Impact</h2>
-<ul>
-  <li>ESSI needs <strong>several 100K€</strong> to fund a dedicated expert team to lead execution</li>
-  <li>Deliver a <strong>deployment blueprint</strong> and engage EU system makers</li>
-  <li>Launch strategic infrastructure projects:
-    <ul>
-      <li>System Design Platform</li>
-      <li>Edge-to-Cloud Wireless Infrastructure</li>
-      <li>AI-as-a-Service Infrastructure</li>
-    </ul>
-  </li>
-</ul>
-<p>⟳ Enable EU chips to reach systems, markets, and investors<br>
-⚙ Build <strong>sovereign tech stacks</strong> across key EU industries<br>
-🚀 Position Europe to lead in the <strong>AI + software-defined systems era</strong></p>
-<h2>Europe Doesn’t Need Another R&amp;D Program. It Needs Execution.</h2>
-<p><strong>ESSI is the industrial twin of Chips JU.</strong><br>
-Where Chips JU <em>sows seeds of innovation</em>, ESSI <em>cultivates value</em>.</p>
-
-<p><strong>Join us.</strong> Let’s make European chips matter &mdash; <em>where it counts</em>.</p>
-
-</body>
 </html>
+  
