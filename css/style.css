@@ -9,7 +9,7 @@ body {
   font-size: 10px;
 }
 strong {font-size: 1em;}
-p{ margin-bottom: 1em;}
+p{ margin-bottom: 1em;margin-top: 1em;}
 h1 {
   font-size: 1.4em;
   color: navy;
