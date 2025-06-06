@@ -85,16 +85,23 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
 }
 /* Responsive rules */
 @media (max-width: 768px) {
-  .navbar {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    flex-direction: column;
-    background: #ffffff;
-    width: 100%;
-    display: none;
-    text-align: center;
-  }
+	body {
+	  font-size: 0.8em;
+	  margin: 10px;
+	}
+	h1 {font-size: 1.1em;}
+	h2 {font-size: 1em;}
+	table, th, td {font-size: 0.8em;}
+	.navbar {
+	position: absolute;
+	top: 60px;
+	right: 0;
+	flex-direction: column;
+	background: #ffffff;
+	width: 100%;
+	display: none;
+	text-align: center;
+	}
   .navbar.active {
     display: flex;
   }
