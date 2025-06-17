@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
 }
 strong {font-size: 1em;}
 p{ margin-bottom: 1em;margin-top: 1em;}
@@ -64,6 +64,7 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
 .navbar {
   display: flex;
   gap: 1rem;
+  font-size: 1rem;
 }
 .navbar a {
   color: black;
