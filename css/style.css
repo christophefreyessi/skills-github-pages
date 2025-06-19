@@ -89,6 +89,7 @@ footer { background: #ffffff; color: black; text-align: center; padding: 1rem; }
 	  font-size: 0.8em;
 	  margin: 10px;
 	}
+	img[alt="ESSI_Logo"] {height: 50px;}
 	h1 {font-size: 1.1em;}
 	h2 {font-size: 1em;}
 	table, th, td {font-size: 0.8em;}
